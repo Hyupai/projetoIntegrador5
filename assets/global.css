@@ -13,6 +13,7 @@ body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
+    box-sizing: border-box;
 }
 
 /* Images and Media Styles */
@@ -115,25 +116,38 @@ header {
 .nav {
     height: 100vh;
     margin-bottom: 20px;
-    padding-left: 20px;
     border-right: 1px solid #e3e7eb;
-    padding-right: 10px;
+}
+
+.nav h3{
+    margin: 10px;
 }
 
 .nav ul {
+
+    width: 10vw;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
 
 .nav ul li {
-    text-align: center;
-    padding: 5px;
+    display: flex;
+    width: 100%;
+    height: 4vh;
+    align-items: center;
+    justify-content: space-around;
+    transition: background-color 0.3s ease;
+}
+
+.nav ul li:hover {
+    background-color: #e3e7eb;
 }
 
 .nav ul li a {
+    display: block; 
     text-decoration: none;
     color: #333;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: bold;
 }
